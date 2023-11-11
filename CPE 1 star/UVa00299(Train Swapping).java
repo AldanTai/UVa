@@ -24,7 +24,7 @@ public class Uva00299 {
 					}
 				}
 				System.out.println("Optimal train swapping takes " + swap + " swaps.");
-			} catch (Exception e) { // 設定若是遇到EOF情況就跳出迴圈
+			} catch (Exception e) { 
 				break;
 			}
 		}
