@@ -19,7 +19,7 @@ public class UVa10041 {
 					sum += Math.abs(Arr[size / 2] - Arr[i]);
 				}
 				System.out.println(sum);
-			} catch (Exception e) { // 設定若是遇到EOF情況就跳出迴圈
+			} catch (Exception e) { 
 				break;
 			}
 		}
