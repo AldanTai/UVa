@@ -6,21 +6,9 @@ public class UVa11150 {
 
 		while (sc.hasNext()) {
 			int N = sc.nextInt();
-			int ans = 0;
-			if (N <= 1) {
-				System.out.println(N);
-			} else {
-				ans = N;
-				while (N != 1) {
-
-					if (N == 2)
-						N = N + 1;
-					ans = ans + N / 3;
-
-					N = N % 3 + N / 3;
-				}
-				System.out.println(ans);
-			}
+			int ans = (N * 3) / 2;
+			System.out.println(ans);
 		}
+		sc.close();
 	}
 }
