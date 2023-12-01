@@ -6,8 +6,7 @@ public class UVa10041 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int quantity = sc.nextInt();
-		while (true) {
-			try {
+		while (sc.hasNext()) {
 				int size = sc.nextInt();
 				int Arr[] = new int[size];
 				for (int i = 0; i < size; i++) {
@@ -19,9 +18,6 @@ public class UVa10041 {
 					sum += Math.abs(Arr[size / 2] - Arr[i]);
 				}
 				System.out.println(sum);
-			} catch (Exception e) { 
-				break;
-			}
 		}
 		sc.close();
 	}
